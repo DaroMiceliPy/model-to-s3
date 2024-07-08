@@ -1,14 +1,19 @@
 # Overview
 
-This project consists an integration between airflow and localstack. Airflow is a orchestrator of data pipelines, that allow us to create differents DAGs. The DAG of this project contains 6 tasks. The DAG basically
-downloa ggal historical data and dollar blue data for Argentina. We merge the data and train a machine learning model, and then, we store that machine learning model to a s3 bucket in localstack. Localstack is a
-emulator of AWS services on local machine
+This project consists of an integration between Airflow and LocalStack. Airflow is an orchestrator of data pipelines that allows us to create different DAGs. The DAG of this project contains 6 tasks. The DAG basically downloads GGAL historical data and dollar blue data for Argentina. We merge the data and train a machine learning model, and then we store that machine learning model in an S3 bucket in LocalStack. LocalStack is an emulator of AWS services on a local machine.
+
+![449979633_8070024293035715_8223846438976562042_n (1)](https://github.com/DaroMiceliPy/model-to-s3/assets/66572761/04e164b6-b16f-4e71-a339-e4e7dc61c836)
+
+### Start Containers
+
+First, we need to start the containers. In the project folder, execute the following Docker command:
+
 
 ![449979633_8070024293035715_8223846438976562042_n (1)](https://github.com/DaroMiceliPy/model-to-s3/assets/66572761/04e164b6-b16f-4e71-a339-e4e7dc61c836)
 
 ### Start containers
 
-First we need to up the containers. In the folder of the project we will execute the docker command:
+First, we need to start the containers. In the project folder, execute the following Docker command:
 
 ```docker
 docker compose up --build
@@ -16,7 +21,7 @@ docker compose up --build
 
 ### Creating s3 bucket
 
-Later we need to create the s3 bucket via terraform, doing the following being in the terraform folder:
+Next, we need to create the S3 bucket via Terraform. While in the Terraform folder, execute the following:
 
  ```terraform
 terraform init
