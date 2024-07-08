@@ -9,8 +9,6 @@ This project consists of an integration between Airflow and LocalStack. Airflow 
 First, we need to start the containers. In the project folder, execute the following Docker command:
 
 
-![449979633_8070024293035715_8223846438976562042_n (1)](https://github.com/DaroMiceliPy/model-to-s3/assets/66572761/04e164b6-b16f-4e71-a339-e4e7dc61c836)
-
 ### Start containers
 
 First, we need to start the containers. In the project folder, execute the following Docker command:
